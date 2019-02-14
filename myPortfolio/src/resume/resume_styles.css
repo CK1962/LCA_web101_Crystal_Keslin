@@ -55,9 +55,9 @@ body {
   
       button {
         grid-column: 2/3;
-        margin: 3% auto;
-        width: 50%;
-        height: 15%;
+        margin: 10% auto;
+        width: 30%;
+        height: 10%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         border-radius: 25px;
