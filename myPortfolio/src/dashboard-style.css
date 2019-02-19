@@ -1,0 +1,50 @@
+header {
+    background-color: lightblue;
+    grid-area: header;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+    margin: 3% 10%;
+  }
+  main {
+    background-color: pink;
+    min-height: calc(100vh - 54px);
+    grid-area: main;
+  }
+  nav {
+    background-color: lightsalmon;
+    grid-area: nav;
+  }
+  aside {
+    background-color: lightgreen;
+    grid-area: aside;
+  }
+  .banner {
+    background-color: lavender;
+    grid-area: banner;
+  }
+  footer {
+    background-color: khaki;
+    grid-area: footer;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "banner"
+      "footer";
+  }
+#container {
+    width: 200px;
+    background-color: lightgray;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+
+}
