@@ -35,44 +35,73 @@
     </div>
     
         <main>
-        <div id="container">
-            <h2>
-                Calculator
-            </h2>
-            <input type="text" id="displayBox">
-            <li>
-            <input type="button" id="mathButton" value="AC">
-            <input type="button" id="mathButton" value="+/-">
-            <input type="button" id="mathButton" value="%">
-            <input type="button" id="mathButton" value="/">
-            </li> 
-            <li>
-            <input type="button" id="digitButton" value="7" > 
-            <input type="button" id="digitButton" value="8">
-            <input type="button" id="digitButton" value="9">
-            <input type="button" id="mathButton" value="x">
-            </li>
-            <li>
-            <input type="button" id="digitButton" value="4"> 
-            <input type="button" id="digitButton" value="5">
-            <input type="button" id="digitButton" value="6">
-            <input type="button" id="mathButton" value="-">
-            </li>
-            <li>
-            <input type="button" id="digitButton" value="1" > 
-            <input type="button" id="digitButton" value="2">
-            <input type="button" id="digitButton" value="3">
-            <input type="button" id="mathButton" value="+">
-            </li>
-            <li>
-            <input type="button" id="digitButton" value="0"> 
-            <input type="button" id="digitButton" value=".">
-            <input type="button" id="mathButton" value="=">
-            </li>
-        </div>    
-
+        <div class="container">
+            <div class="calc-body">
+                          <div class="calc-screen">
+                            <div class="calc-operation"></div>
+                            <div class="calc-typed">12345<span class="blink-me">_</span></div>
+                          </div>
+                          <div class="calc-button-row">
+                            <div class="button c">C</div>
+                            <div class="button l">≠</div>
+                            <div class="button l">%</div>
+                            <div class="button l">/</div>
+                          </div>
+                          <div class="calc-button-row">
+                            <div class="button">7</div>
+                            <div class="button">8</div>
+                            <div class="button">9</div>
+                            <div class="button l">x</div>
+                          </div>
+                          <div class="calc-button-row">
+                            <div class="button">4</div>
+                            <div class="button">5</div>
+                            <div class="button">6</div>
+                            <div class="button l">−</div>
+                          </div>
+                          <div class="calc-button-row">
+                            <div class="button">1</div>
+                            <div class="button">2</div>
+                            <div class="button">3</div>
+                            <div class="button l">+</div>
+                          </div>
+                          <div class="calc-button-row">
+                            <div class="button">.</div>
+                            <div class="button">0</div>
+                            <div class="button">
+                              <</div>
+                                <div class="button l">=</div>
+                            </div>
+                          </div>
+                        </div>
+       
         </main>
-        <aside>aside</aside>
+        <aside>
+                <div class="container">
+                        <div class="result">0</div>
+                        <div class="buttons">
+                            <span class="button resetBtn">AC</span>
+                            <span class="button negative operator">+/-</span>
+                            <span class="button operator percent">%</span>
+                            <span class="button operator">/</span>
+                            <span class="button number">7</span>
+                            <span class="button number">8</span>
+                            <span class="button number">9</span>
+                            <span class="button operator">*</span>
+                            <span class="button number">4</span>
+                            <span class="button number">5</span>
+                            <span class="button number">6</span>
+                            <span class="button operator">-</span>
+                            <span class="button number">1</span>
+                            <span class="button number">2</span>
+                            <span class="button number">3</span>
+                            <span class="button operator">+</span>
+                            <span class="button number zero-btn">0</span>
+                            <span class="button number dot">.</span>
+                            <span class="button  operator">=</span>
+                        </div>
+                    </div>
+        </aside>
         <div class="banner">div.banner</div>
         <footer>footer</footer>
       </div>
