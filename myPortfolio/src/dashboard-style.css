@@ -291,4 +291,53 @@ footer {
   grid-area: footer;
 }
 
+@import '../base"'
 
+.container {
+    width: 800px;
+    +clearfix
+}
+
+.column {
+    float: left;
+    width: 50;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: auto;
+    } }
+
+    .column {
+        float: none;
+        width: auto;
+    }
+
+    @import '../base"'
+
+.container {
+    width: 500px;
+    +clearfix
+}
+
+.column {
+    float: left;
+    width: 50;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+
+
+
+@media (max-width: 500px) {
+    .container {
+        width: auto;
+    } }
+
+    .column {
+        float: none;
+        width: auto;
+    }
