@@ -7,6 +7,8 @@ body {
   background: rgb(156, 165, 163);
   margin: 0;
   display: grid;
+  grid-template-columns: repeat(auto-fit
+    minmax (320px 1fr));
   grid-template-areas:
     "header"
     "main"
@@ -14,7 +16,7 @@ body {
 
 header {
   font-size: 25px;
-  grid-area:header;
+  grid-area: header;
   display: grid;
   grid-template-areas:
     "logo header-text calendar"
@@ -291,53 +293,55 @@ footer {
   grid-area: footer;
 }
 
-@import '../base"'
+@import '"../base"'
 
 .container {
-    width: 800px;
-    +clearfix
+  width: 800px;
+  +clearfix
 }
 
 .column {
-    float: left;
-    width: 50;
-    box-sizing: border-box;
-    padding-top: 20px;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-top: 20px;
 }
 
-@media (max-width: 800px) {
-    .container {
-        width: auto;
-    } }
-
-    .column {
-        float: none;
-        width: auto;
-    }
-
-    @import '../base"'
-
-.container {
-    width: 500px;
-    +clearfix
+@media (max-width: 900px) {
+  .container {
+    width: auto;
+  }
 }
 
 .column {
-    float: left;
-    width: 50;
-    box-sizing: border-box;
-    padding-top: 20px;
+  float: none;
+  width: auto;
+}
+
+@import '"../base"'
+
+.container {
+  width: 500px;
+  +clearfix
+}
+
+.column {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-top: 20px;
 }
 
 
 
 
 @media (max-width: 500px) {
-    .container {
-        width: auto;
-    } }
+  .container {
+    width: auto;
+  }
+}
 
-    .column {
-        float: none;
-        width: auto;
-    }
+.column {
+  float: none;
+  width: auto;
+}

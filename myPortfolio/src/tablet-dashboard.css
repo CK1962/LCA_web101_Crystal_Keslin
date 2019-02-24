@@ -1,13 +1,13 @@
-@import '../base"'
+@import '"../base"'
 
 .container {
-    width: 800px;
+    width: 900px;
     +clearfix
 }
 
 .column {
     float: left;
-    width: 50;
+    width: 50%;
     box-sizing: border-box;
     padding-top: 20px;
 }
@@ -15,7 +15,7 @@
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .container {
         width: auto;
     } }
