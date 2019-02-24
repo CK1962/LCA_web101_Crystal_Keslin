@@ -1,16 +1,30 @@
+@import '../base"'
+
+.container {
+  width: 400px;
+  +clearfix
+}
+
+.column {
+  float: center;
+  width: 50;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .nav-container {
+    width: auto;
+    height: 100%vh;
+  }
+}
 
 body {
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url('./clouds.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.logo {
-  width: 100px;
-  max-width: 100px;
-  height: auto;
-  margin: 3% 10%;
 }
 
 header {
@@ -23,65 +37,52 @@ main {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+}
+
+img {
+  margin: 15% 15%;
+
 }
 
 nav>a {
-  margin: 2% 1% 3%;
   height: 10%;
-  width: 15%;
-  color: purple;
+  width: auto;
+  margin-top: 10%;
+  color: rgb(3, 39, 15);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 25px;
+  font-size: auto;
+  border-radius: 15px;
   background: transparent;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  border: 5px solid purple;
+  border: 2px solid rgb(3, 39, 15);
 }
 
 .has-border {
+  width: 100%vw;
   border-radius: 25px;
-  border: 5px solid purple;
+  border: 5px solid prgb(3, 39, 15);
   background: none;
   padding: 20px;
 }
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
   width: 100%;
-}
-
-#profile-pic {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  margin: 15% auto;
-  grid-column: 3/4;
 }
 
 h1 {
-  color: purple;
-  grid-column: 2/3;
-  margin: 10% auto;
-  font-style: italic;
-  text-align: center;
-}
-
-p {
-  color: purple;
-  font-size: 16pt;
-  grid-column: 2/3;
-  margin: 10% auto;
+  color: rgb(3, 39, 15);
+  grid-column: 1/3;
+  margin-top: 1%;
   font-style: italic;
   text-align: center;
 }
 
 h2 {
-  color: purple;
+  color: rgb(3, 39, 15);
   grid-column: 2/3;
-  margin: 10% auto;
   font-style: italic;
   text-align: center
 }
