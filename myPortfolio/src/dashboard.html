@@ -10,151 +10,142 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <img src="./LCA_Logo.png" class="logo" alt="fake logo">
+
+  <header>
+    <!-- LOGO -->
+    <img src="./LCA_Logo.png" id="logo" alt="fake logo">
+
+    <!-- HEADER TEXT -->
+    <div id="header-text">
       <h1>Live - every day as if it is your last</h1>
       <h1>Love - your family and show them every day</h1>
       <h1>Laugh - often</h1>
-      <div class="sidebar">
-        <aside class="jzdbox1 jzdbasf jzdcal">
-          <div class="jzdbox1 jzdbasf jzdcal">
+    </div>
 
-            <div class="jzdcalt">February 2019</div>
+    <!-- CALENDAR -->
+    <div id="calendar">
+      <aside class="jzdbox1 jzdbasf jzdcal">
+        <div class="jzdbox1 jzdbasf jzdcal">
 
-            <span>Su</span>
-            <span>Mo</span>
-            <span>Tu</span>
-            <span>We</span>
-            <span>Th</span>
-            <span>Fr</span>
-            <span>Sa</span>
+          <div class="jzdcalt">February 2019</div>
 
-            <span class="jzdb">
-              <!--BLANK--></span>
-            <span class="jzdb">
-              <!--BLANK--></span>
-            <span class="jzdb">
-              <!--BLANK--></span>
-            <span class="jzdb">
-              <!--BLANK--></span>
-            <span class="jzdb">
-              <!--BLANK--></span>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-            <span>11</span>
-            <span>12</span>
-            <span>13</span>
-            <span>14</span>
-            <span>15</span>
-            <span>16</span>
-            <span>17</span>
-            <span>18</span>
-            <span>19</span>
-            <span>20</span>
-            <span>21</span>
-            <span>22</span>
-            <span>23</span>
-            <span>24</span>
-            <span>25</span>
-            <span>26</span>
-            <span>27</span>
-            <span>28</span>
-            <span class="jzdb">
-              <!--BLANK--></span>
-            <span class="jzdb">
-              <!--BLANK--></span>
-          </div>
-        </aside>
+          <span>Su</span>
+          <span>Mo</span>
+          <span>Tu</span>
+          <span>We</span>
+          <span>Th</span>
+          <span>Fr</span>
+          <span>Sa</span>
+
+          <span class="jzdb">
+            <!--BLANK--></span>
+          <span class="jzdb">
+            <!--BLANK--></span>
+          <span class="jzdb">
+            <!--BLANK--></span>
+          <span class="jzdb">
+            <!--BLANK--></span>
+          <span class="jzdb">
+            <!--BLANK--></span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span>16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <span>22</span>
+          <span>23</span>
+          <span>24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+          <span class="jzdb">
+            <!--BLANK--></span>
+          <span class="jzdb">
+            <!--BLANK--></span>
+        </div>
         <aside class=clock>
-          <div class="clock">
-
-            <p id="clock">HH:MM:SS</p>
-          </div>
-
+          <p id="clock">HH:MM:SS</p>
         </aside>
-      </div>
-    </header>
+      </aside>
+    </div>
+  </header>
 
-    <div class="container">
-      <div class="main">
-        <main>
+  <main>
+    <banner id="banner">
+      <h1>
+        News Links
+      </h1>
+      <nav>
+        <button><a class="link" href="https://news.google.com/?hl=en-US&gl=US&ceid=US:en" target="blank">/Google News</a></button>
+        <button><a class="link" href="https://www.washingtonpost.com/?noredirect=on" target="blank">/Washington Post</a></button>
+        <button><a class="link" href="https://www.lubbockonline.com/news" target="blank">/Lubbock Online</a></button>
+      </nav>
+    </banner>
 
-          <div style="float:left">
-            <h1>Things To Do Today</h1>
-            <nav>
-              <ul>
-                <li><a href="#">nav 1</a></li>
-                <li><a href="#">nav 2</a></li>
-                <li><a href="#">nav 3</a></li>
-              </ul>
-            </nav>
-            <img src="./wireframe.jpg" class="wireframe">
-            <img src="./hierarchy.jpg" class="wireframe">
-          </div>
-
-          <div style="float:right;" class="calculator sidebar">
-            <fieldset id="container">
-              <form name="calculator">
-
-                <input id="display" type="text" name="display" readonly>
-
-                <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
-                <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
-                <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
-                <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
-                <br>
-                <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
-                <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
-                <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
-                <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
-                <br>
-                <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
-                <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
-                <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
-                <input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
-                <br>
-                <input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
-                <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
-                <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
-                <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
-              </form>
-            </fieldset>
-          </div>
-        </main>
-      </div>
+    <div id="things-to-do">
+      <h1>Things To Do Today</h1>
+      <nav>
+        <ul>
+          <li><a href="#">nav 1</a></li>
+          <li><a href="#">nav 2</a></li>
+          <li><a href="#">nav 3</a></li>
+        </ul>
+      </nav>
+      <img src="./wireframe.jpg" class="wireframe">
+      <img src="./hierarchy.jpg" class="wireframe">
     </div>
 
-    <div class="banner">
-      <banner class="banner">
-        <h1>
-          News Links
-        </h1>
-        <nav>
-          <button><a class="link" href="https://news.google.com/?hl=en-US&gl=US&ceid=US:en" target="blank">/Google News</a></button>
-          <button><a class="link" href="https://www.washingtonpost.com/?noredirect=on" target="blank">/Washington Post</a></button>
-          <button><a class="link" href="https://www.lubbockonline.com/news" target="blank">/Lubbock Online</a></button>
-        </nav>
-      </banner>
-    </div>
+    <div id="calculator">
+      <fieldset id="calculator-container">
+        <form name="calculator">
 
-    <div class='footer'>
-      <footer>
-        <h2>
-          Dashboard created by Crystal Keslin 2-22-19
-        </h2>
-      </footer>
-    </div>
-  </div>
+          <input id="display" type="text" name="display" readonly>
 
+          <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+          <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+          <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+          <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+          <br>
+          <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+          <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+          <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+          <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+          <br>
+          <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+          <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+          <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+          <input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+          <br>
+          <input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+          <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+          <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+          <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+        </form>
+      </fieldset>
+    </div>
+    <footer>
+      <h2>
+        Dashboard created by Crystal Keslin 2-22-19
+      </h2>
+    </footer>
+  </main>
 </body>
 
 </html>

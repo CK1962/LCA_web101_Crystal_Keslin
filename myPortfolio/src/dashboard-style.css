@@ -4,40 +4,54 @@
 }
 
 body {
+  background: rgb(156, 165, 163);
+
   margin: 0;
   display: grid;
   grid-template-areas:
     /* Notice how I've stacked my areas, just like they look on the page! */
-    "logo header aside"
-    "banner banner banner"
+    "header"
     "main"
-    "nav"
-    "banner"
-    "footer"
 }
 
-.header {
-  background: rgb(156, 165, 163);
-  grid-area: header;
+header {
   font-size: 25px;
+  grid-area:header;
+  display: grid;
+  grid-template-areas:
+    /* Notice how I've stacked my areas, just like they look on the page! */
+    "logo header-text calendar"
 }
 
-.logo {
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "banner banner"
+    "things-to-do calculator"
+    "footer footer"
+}
+
+#logo {
+  background-color: red;
   margin: 3% 3%;
   width: 100px;
   height: 100px;
+  grid-area: logo;
+}
+
+#header-text {
+  background-color: orange;
+  grid-area: header-text;
 }
 
 h1 {
   text-align: center;
-
 }
 
-.sidebar {
-  grid-area: aside;
-  float: right;
-  margin-top: -550px;
-
+#calendar {
+  background-color: yellow;
+  grid-area: calendar;
 }
 
 .jzdbox1 {
@@ -122,7 +136,10 @@ div[data-title]:hover:after {
   border: 3px solid black;
 }
 
-
+#things-to-do {
+  background-color: blue;
+  grid-area: things-to-do;
+}
 
 nav {
   grid-area: nav;
@@ -139,15 +156,15 @@ main {
   height: 100px;
 }
 
-.calculator {
+#calculator {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  grid-area: calculator;
 }
 
-#container {
-  width: 275px;
+#calculator-container {
+  width: 500px;
   padding: 8px 8px 20px 8px;
   margin: 20px auto;
   background-color: #ABABAB;
@@ -240,12 +257,15 @@ calculator sidebar {
   justify-content: center;
 }
 
-.banner {
+#banner {
   width: 100%;
   background-color: rgb(156, 165, 163);
   color: black;
   padding: 10px;
   border: 3px solid black;
+  grid-area: banner;
+
+  background-color: green;
 }
 
 button {
@@ -254,50 +274,9 @@ button {
 
 }
 
-.footer {
+footer {
   background-color: rgb(156, 165, 163);
   color: black;
   text-align: center;
-}
-
-/* ... */
-
-
-@media (min-width: 500px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    /* the first column is 1 unit (fraction), the second column is 3 units */
-    grid-template-areas:
-      /* stack the components how you want them to appear in the columns */
-      "header  aside"
-      /*stack aside
-      "banner" /* stretch banner across both columns*/
-      "main"
-      "footer"
-      /* stretch banner across both columns at the bottom*/
-    ;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-/* ... */
-
-@media (min-width: 700px) {
-  .container {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-      "header header  header"
-      "nav    main    aside"
-      "nav    main    banner"
-      "footer footer  footer"
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
+  grid-area: footer;
 }
