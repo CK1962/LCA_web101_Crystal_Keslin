@@ -1,0 +1,17 @@
+@media (min-width: 320px) and (max-width: 600px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* the first column is 1 unit (fraction), the second column is 3 units */
+      grid-template-areas:
+        "header header"
+        "calendar calendar"
+        "banner banner"
+        "things-to-do things-to-do"
+        "calculator calculato"
+        "footer footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
