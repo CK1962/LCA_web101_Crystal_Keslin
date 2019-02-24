@@ -5,11 +5,9 @@
 
 body {
   background: rgb(156, 165, 163);
-
   margin: 0;
   display: grid;
   grid-template-areas:
-    /* Notice how I've stacked my areas, just like they look on the page! */
     "header"
     "main"
 }
@@ -19,7 +17,6 @@ header {
   grid-area:header;
   display: grid;
   grid-template-areas:
-    /* Notice how I've stacked my areas, just like they look on the page! */
     "logo header-text calendar"
 }
 
@@ -33,7 +30,6 @@ main {
 }
 
 #logo {
-  background-color: red;
   margin: 3% 3%;
   width: 100px;
   height: 100px;
@@ -41,7 +37,6 @@ main {
 }
 
 #header-text {
-  background-color: orange;
   grid-area: header-text;
 }
 
@@ -50,12 +45,11 @@ h1 {
 }
 
 #calendar {
-  background-color: yellow;
   grid-area: calendar;
 }
 
 .jzdbox1 {
-  width: 350px;
+  width: 375px;
   background: rgb(156, 165, 163);
   border-radius: 5px;
   overflow: hidden;
@@ -137,7 +131,6 @@ div[data-title]:hover:after {
 }
 
 #things-to-do {
-  background-color: blue;
   grid-area: things-to-do;
 }
 
@@ -154,6 +147,8 @@ main {
 .wireframe {
   width: 100px;
   height: 100px;
+  padding-left: 20px;
+
 }
 
 #calculator {
@@ -264,14 +259,29 @@ calculator sidebar {
   padding: 10px;
   border: 3px solid black;
   grid-area: banner;
-
-  background-color: green;
 }
 
 button {
-  padding-bottom: 30px;
+  grid-column: 2/3;
+  margin: 3% auto;
+  width: 25%;
+  height: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 25px;
+  background: transparent;
+  padding: 2%;
+  padding-bottom: 2%;
+  text-align: center;
   color: black;
+  letter-spacing: 5px;
+  font-style: italic;
+}
 
+nav {
+  color: black;
+  letter-spacing: 2px;
+  font-style: italic;
 }
 
 footer {
