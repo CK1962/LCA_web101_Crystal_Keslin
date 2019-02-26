@@ -3,6 +3,11 @@
   padding-top: 5px;
 }
 
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 body {
   background: rgb(156, 165, 163);
   margin: 0;
@@ -12,6 +17,7 @@ body {
   grid-template-areas:
     "header"
     "main"
+    "banner"
 }
 
 header {
@@ -33,8 +39,8 @@ main {
 
 #logo {
   margin: 3% 3%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   grid-area: logo;
 }
 
@@ -44,6 +50,7 @@ main {
 
 h1 {
   text-align: center;
+  color: navy;
 }
 
 #calendar {
@@ -125,15 +132,17 @@ div[data-title]:hover:after {
 
 #clock {
   background-color: rgb(156, 165, 163);
-  color: black;
+  color: navy;
   display: inline;
   font-size: 60px;
   padding: 10px;
-  border: 3px solid black;
+  border: 3px solid navy;
 }
 
 #things-to-do {
   grid-area: things-to-do;
+  /*display: flex;
+  flex-wrap: wrap;*/
 }
 
 nav {
@@ -142,15 +151,20 @@ nav {
 
 main {
   grid-area: main;
-  grid-column: 1fr 1fr;
+  grid-column: 1fr;
   background-color: rgb(156, 165, 163);
 }
 
 .wireframe {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   padding-left: 20px;
 
+}
+
+.happy {
+display: flex;
+flex-wrap: wrap;
 }
 
 #calculator {
@@ -255,19 +269,21 @@ calculator sidebar {
 }
 
 #banner {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   background-color: rgb(156, 165, 163);
-  color: black;
+  color: navy;
   padding: 10px;
-  border: 3px solid black;
+  border: 3px solid navy;
   grid-area: banner;
 }
 
 button {
   grid-column: 2/3;
-  margin: 3% auto;
-  width: 25%;
-  height: 10%;
+  margin: 10% auto;
+  width: 30%;
+  height: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   border-radius: 25px;
@@ -275,7 +291,7 @@ button {
   padding: 2%;
   padding-bottom: 2%;
   text-align: center;
-  color: black;
+  color: navy;
   letter-spacing: 5px;
   font-style: italic;
 }
@@ -288,60 +304,94 @@ nav {
 
 footer {
   background-color: rgb(156, 165, 163);
-  color: black;
+  color: navy;
   text-align: center;
   grid-area: footer;
-}
-
-@import '"../base"'
-
-.container {
-  width: 800px;
-  +clearfix
-}
-
-.column {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  padding-top: 20px;
 }
 
 @media (max-width: 900px) {
   .container {
     width: auto;
+
   }
-}
+  body {
+    background: wheat;
+  }
+
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+  header {
+    font-size: 18px;
+  }
+  #clock {
+    background-color: wheat;
+    font-size: 40px;
+    padding: 10px;
+    border: 3px solid navy;
+  }
+  main {
+    grid-area: main;
+    grid-column: 1fr;
+    background-color: wheat;
+  }
+  #banner {
+    background-color: wheat;
+  }
+  footer {
+    background-color: wheat;
+  }
 
 .column {
   float: none;
   width: auto;
 }
-
-@import '"../base"'
-
-.container {
-  width: 500px;
-  +clearfix
 }
-
-.column {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  padding-top: 20px;
-}
-
-
-
 
 @media (max-width: 500px) {
   .container {
     width: auto;
   }
+  header {
+    font-size: 10px;
+  }
+  #logo {
+    width: 0px;
+    height: 0px;
+  }
+  body {
+    background: pink;
+  }
+  #clock {
+    background-color: pink;
+    font-size: 40px;
+  }
+  main {
+    grid-area: main;
+    grid-column: 1fr;
+    background-color: pink;
+  }
+  #banner {
+    background-color: pink;
+  }
+  button {
+    letter-spacing: 2px;
+  }
+  footer {
+    background-color: pink;
+    color: navy;
+}
+h2 {
+  font-size: 18px;
+}
+.wireframe {
+  width: 0px;
+  height: 0px;
 }
 
 .column {
   float: none;
   width: auto;
+}
 }
