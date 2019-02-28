@@ -1,19 +1,14 @@
-@media (max-width: 800px) {
-  .nav-container {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: url("clouds.jpg") no-repeat center center fixed;
-  height: 200px;
+  background-image: url("../images2/clouds.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%vh;
+  width: 100%vw;
 }
 
 .logo {
-  width: 100px;
+  width: 150px;
   height: auto;
   margin: 3% 10%;
 }
@@ -33,62 +28,62 @@ main {
 }
 
 nav>a {
+  margin: 2% 1% 3%;
   height: 10%;
-  width: auto;
-  margin-top: 10%;
-  color: rgb(3, 39, 15);
+  width: 15%;
+  color: purple;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: auto;
-  padding: 15px;
+  font-size: 18px;
+  border-radius: 40px;
+  background: transparent;
+  padding: 20px;
   text-align: center;
-  border-radius: 30px;
-  border-spacing: 10px;
-  border: 3px solid rgb(3, 39, 15);
+  border: 5px solid purple;
 }
 
 nav {
   display: flex;
-  flex: wrap;
-  justify-content: right;
-  width: 100%;
+  justify-content: flex-end;
+  width: 80%;
 }
-
 
 #profile-pic {
   float: center;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   margin: center;
-
 }
 
 h1 {
-  color: rgb(7, 41, 7);
+  color: purple;
   grid-column: 1/3;
   margin: auto;
   font-style: italic;
   text-align: center;
   padding-bottom: 20px;
- }
- p {
-  color: rgb(7, 41, 7);
+}
+
+p {
+  color: purple;
   font-size: 16pt;
   grid-column: 1/3;
   margin: auto;
   font-style: italic;
   text-align: left;
   padding-bottom: 20px;
-  }
+}
+
 h2 {
-  color: rgb(7, 41, 7);
+  color: purple;
   grid-column: 1/3;
   margin: auto;
   font-style: italic;
   text-align: center;
   padding-bottom: 20px;
- }
- button {
+}
+
+button {
   grid-column: 1/3;
   margin: auto;
   width: 70%;
@@ -100,10 +95,7 @@ h2 {
   padding: 20px;
   padding-bottom: 5%;
   text-align: center;
+  color: purple;
   letter-spacing: 10px;
   font-style: italic;
-}
-#portfolio {
-  color:rgb(7, 41, 7);
-
 }
