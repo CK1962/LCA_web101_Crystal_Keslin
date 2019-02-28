@@ -107,10 +107,11 @@ main {
 }
 
 .row {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
 #calculator-container2 {
   width: 500px;
   padding: 8px 8px 20px 8px;
