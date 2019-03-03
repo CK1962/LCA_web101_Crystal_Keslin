@@ -1,0 +1,38 @@
+.container1 {
+  height: 450px;
+  width: 850px;
+  margin: 0% auto;
+  background-image: url("../images2/pia23006-nasa.jpg")
+}
+
+h1 {
+  font-family: 'Anton', serif;
+  font-size: 100px;
+  letter-spacing: 25px;
+  text-align: center;
+  color: white;
+
+}
+body {
+  margin: 0% auto;
+  width: 850px;
+  background-color: rgb(119, 195, 214);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0% auto;
+}
+
+article {
+  height: 324px;
+  width: 270px;
+  padding: 20px;
+}
+
+button {
+  background-color: lightgray;
+  
+}
