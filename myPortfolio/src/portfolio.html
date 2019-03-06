@@ -1,27 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="dashboard" href="./src/dashboard.html">
-    <link rel="hairpage" href="./style.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/src/Portfolio-RebuildStyle.css">
     <title>portfolio-Rebuild</title>
 </head>
+
 <body>
-    <header>
 
+    <section class="top">
+        <img src="../images2/LCA_Logo.png" class="logo" alt="fake logo">
+        <header>
 
-    </header>
+            <nav>
+                <a class="has border" href="dashboard.html" target="blank">Dashboard</a>
+                <a class="has border" href="hairIndex.html" target="blank">Hair Landing Page</a>
+                <a class="has border" href="NASAIndex.html" target="blank">NASA</a>
+            </nav>
+
+        </header>
+        <img src="../images2/myProfilePic.JPG" id="profile-pic" alt="Headshot of Me">
+
+    </section>
+
     <main>
-        <section>
+        <section class="information">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            Name:
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Name" name="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Location:
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Location" name="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email:
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Email" name="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Message:
+                        </td>
+                        <td>
+                            <input type="textarea" placeholder="Message" name="">
+                        </td>
+                    </tr>
 
+                </table>
+            </form>
+            <br>
+            <button id="submit"><a href="" target="blank">Submit</a></button>
+            <button id="reset"><a href="" target="blank">Reset</a></button>
         </section>
 
-
+        <section class="movie">
+            <video src="../videos/IMG_5092.MOV" class="disney" alt="video of Disney"  width="380" height="200" loop
+                controls>Video of Disney</video>
+        </section>
+        <section class="youtube">
+            <iframe width="380" height="200" src="https://www.youtube.com/embed/3Gioc3QAJ7s" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
     </main>
-
-
 </body>
+<footer>
+    <h2>
+        Created by Crystal Keslin - March 2019
+    </h2>
+</footer>
+
 </html>
