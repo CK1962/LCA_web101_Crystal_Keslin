@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(241, 165, 241);
   margin: 0;
@@ -58,7 +59,7 @@ nav {
   height: 500px;
   width: 500px;
   font-size: 24px;
-  padding: 20px;
+  padding: 30px;
 }
 
 #submit {
@@ -91,7 +92,7 @@ nav {
 }
 
 .youtube {
-  height: 500px;
+  height: 300px;
   width: 500px;
   padding: 10px;
 }
@@ -104,6 +105,7 @@ footer {
   padding: 15px;
   text-align: center;
 }
+
 @media (max-width: 800px) {
   body {
     background-color: rgb(153, 238, 164);
@@ -120,10 +122,23 @@ footer {
     height: auto;
   }
 
-  main {
-    display: grid;
+  .container2 {
+    display: block;
+  }
+
+  .movie {
+    margin: 10px 10px;
+  }
+
+  .youtube {
+    margin: 10px 10px;
+  }
+
+  footer {
+    display: none;
   }
 }
+
 @media (max-width: 400px) {
   body {
     background-color: rgb(215, 236, 240);
@@ -140,13 +155,25 @@ footer {
     color: blue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-  border-radius: 30px;
-  background: transparent;
-  padding: 10px;
+    border-radius: 30px;
+    background: transparent;
+    padding: 10px;
   }
 
   #profile-pic {
     width: 0px;
     Height: 0px;
+  }
+
+  .movie {
+    min-width: 40%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  .youtube {
+    min-width: 40%;
+    max-width: 380px;
+    height: auto;
   }
 }
