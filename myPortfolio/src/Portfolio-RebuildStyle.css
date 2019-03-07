@@ -88,7 +88,6 @@ nav {
   width: 500px;
   height: 300px;
   padding: 10px;
-
 }
 
 .youtube {
@@ -169,11 +168,15 @@ footer {
     min-width: 40%;
     max-width: 380px;
     height: auto;
+    padding: 5px;
+
   }
 
   .youtube {
     min-width: 40%;
     max-width: 380px;
     height: auto;
+    padding: 5px;
+
   }
 }
