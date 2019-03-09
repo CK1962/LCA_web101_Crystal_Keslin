@@ -1,83 +1,70 @@
-@import '../base"'
-
-.container {
-  width: 400px;
-  +clearfix
-}
-
-.column {
-  float: left;
-  width: 50%;
-  box-sizing: border-box;
-  padding-top: 20px;
-}
 
 @media (max-width: 400px) {
   .nav-container {
     width: auto;
     height: 100%vh;
   }
-}
 
-.column {
-  float: none;
-  width: auto;
-  height: auto;
-}
+  .column {
+    float: none;
+    width: auto;
+    height: auto;
+  }
 
-body {
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../images2/clouds.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images2/clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-header {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  width: 100%;
-}
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+  }
 
-main {
-  height: 100%;
-  width: 100%;
-  display: grid;
-}
+  main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+  }
 
-img {
-  margin: 15% 15%;
-}
+  img {
+    margin: 15% 15%;
+  }
 
-nav>a {
-  height: 10%;
-  width: auto;
-  margin-top: 10%;
-  color: rgb(3, 39, 15);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: auto;
-  padding: 15px;
-  text-align: center;
-}
+  nav>a {
+    height: 10%;
+    width: auto;
+    margin-top: 10%;
+    color: rgb(3, 39, 15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+    padding: 15px;
+    text-align: center;
+  }
 
-nav {
-  display: flex;
-  flex: wrap;
-  justify-content: right;
-  width: 100%;
-}
+  nav {
+    display: flex;
+    flex: wrap;
+    justify-content: right;
+    width: 100%;
+  }
 
-h1 {
-  color: rgb(3, 39, 15);
-  grid-column: 1/3;
-  margin-top: 1%;
-  font-style: italic;
-  text-align: center;
-}
+  h1 {
+    color: rgb(3, 39, 15);
+    grid-column: 1/3;
+    margin-top: 1%;
+    font-style: italic;
+    text-align: center;
+  }
 
-h2 {
-  color: rgb(3, 39, 15);
-  grid-column: 2/3;
-  font-style: italic;
-  text-align: center
+  h2 {
+    color: rgb(3, 39, 15);
+    grid-column: 2/3;
+    font-style: italic;
+    text-align: center
+  }
 }

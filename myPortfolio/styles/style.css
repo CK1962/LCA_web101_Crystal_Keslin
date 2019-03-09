@@ -10,27 +10,27 @@ body {
 .logo {
   width: 150px;
   height: auto;
-  margin: 3% 10%;
+  margin: 5% 10%;
 }
 
 header {
   display: grid;
   grid-template-columns: 40% 60%;
-  width: 80%;
+  width: 90%;
 }
 
 main {
-  margin: 5% 5% 5%;
+  margin: 8% 35% 5%;
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: 30% auto 40%;
 }
 
 nav>a {
-  margin: 2% 1% 3%;
+  margin: 15% 5% 3%;
   height: 10%;
-  width: 15%;
+  width: 40%vw;
   color: purple;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -48,11 +48,10 @@ nav {
 }
 
 #profile-pic {
-  float: center;
+  float: right;
   width: 300px;
   height: 350px;
   border-radius: 50%;
-  margin: center;
 }
 
 h1 {
@@ -66,7 +65,7 @@ h1 {
 
 p {
   color: purple;
-  font-size: 16pt;
+  font-size: 16px;
   grid-column: 1/3;
   margin: auto;
   font-style: italic;
@@ -85,7 +84,7 @@ h2 {
 
 button {
   grid-column: 1/3;
-  margin: auto;
+  margin: 10% 10%;
   width: 70%;
   height: 15%;
   font-family: Arial, Helvetica, sans-serif;
@@ -96,6 +95,119 @@ button {
   padding-bottom: 5%;
   text-align: center;
   color: purple;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   font-style: italic;
+}
+
+h3 {
+  text-align: center;
+  color: purple;
+}
+
+@media (min-width: 420px) and (max-width: 775px) {
+  .logo {
+    width: 100px;
+    height: auto;
+    margin: 5% 10%;
+  }
+
+  nav>a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    font-size: 20px;
+    color: wheat;
+    border: none;
+  }
+
+  #profile-pic {
+    margin: 1% 50%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    margin: 10px -100px;
+    padding-bottom: 5%;
+    color: purple;
+  }
+
+  p {
+    margin: auto;
+    padding-top: 5%;
+    color: purple;
+    font-size: 20px;
+  }
+
+  h2 {
+    margin: 75px -150px;
+    padding: 30px;
+    color: purple;
+  }
+
+  button {
+    border: none;
+    color: aqua;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .logo {
+    width: 0px;
+    height: 0px;
+  }
+
+  nav>a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    font-size: 14px;
+    color: aqua;
+    border: none;
+  }
+
+  .nav-container {
+    display: block;
+  }
+
+  #profile-pic {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    margin: 90px -100px;
+    padding-bottom: 5%;
+    color: aqua;
+    text-shadow: 2px 2px teal;
+  }
+
+  p {
+    margin: auto;
+    padding-top: 5%;
+    color: aqua;
+    font-size: 18px;
+    text-shadow: 2px 2px teal;
+  }
+
+  h2 {
+    margin: 75px -150px;
+    padding: 30px;
+    font-size: 17px;
+    color: aqua;
+    text-shadow: 2px 2px teal;
+  }
+
+  button {
+    border: none;
+    color: aqua;
+  }
+
+  h3 {
+    color: aqua;
+    text-shadow: 2px 2px teal;
+  }
 }
