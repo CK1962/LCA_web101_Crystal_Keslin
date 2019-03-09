@@ -1,84 +1,80 @@
-* {
-    box-sizing: border-box;
-    background-color: blue;
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgb(211, 238, 220), rgb(54, 155, 76));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%vh;
+  width: 100%vw;
+}
 
-  header {
-      background-color: greenyellow;
-  }
+.logo {
+  width: 150px;
+  height: auto;
+  margin: 5% 10%;
+}
 
-  h1 {
-      color: blue;
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 90%;
+}
 
-  }
-  banner {
-      background-color: purple;
+main {
+  margin: 8% 35% 5%;
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% auto 40%;
+}
 
-  }
+nav>a {
+  margin: 15% 5% 3%;
+  height: 10%;
+  width: 40%vw;
+  color: rgb(8, 36, 8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 40px;
+  background: transparent;
+  padding: 20px;
+  text-align: center;
+  border: 5px solid rgb(8, 36, 8);
+}
 
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
 
-  #my_story {
-    grid-column: 1/3;
-    margin: auto;
-    width: 70%;
-    height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: transparent;
-    padding: 20px;
-    padding-bottom: 5%;
-    text-align: center;
-    color: purple;
-    letter-spacing: 10px;
-    font-style: italic;
-  }
-  #resume {
-    grid-column: 1/3;
-    margin: auto;
-    width: 70%;
-    height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: transparent;
-    padding: 20px;
-    padding-bottom: 5%;
-    text-align: center;
-    color: purple;
-    letter-spacing: 10px;
-    font-style: italic;
-  }
-  main {
-      background-color: white;
-  }
-  .history {
-    background-color: yellow;
-  }
-  p {
-color: black
-  }
-  .image1 {
-      Height: 200px;
-      width: 200px;
-  }
-  .career {
-    background-color: blue;
-  }
-  .image2 {
-      Height: 200px;
-      width: 200px;
-  }
-  .career2 {
-    background-color: violet;
-  }
-  .image3 {
-      Height: 200px;
-      width: 200px;
-  }
-  footer {
-      background-color: orange
-  }
-  h2 {
-      color: black;
-  }
+#profile-pic {
+  float: right;
+  width: 300px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+h1 {
+  color: rgb(8, 36, 8);
+  grid-column: 1/3;
+  margin: auto;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: rgb(8, 36, 8);
+  margin: auto;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer {
+  color: rgb(8, 36, 8);
+  margin: auto;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 20px;
+}
