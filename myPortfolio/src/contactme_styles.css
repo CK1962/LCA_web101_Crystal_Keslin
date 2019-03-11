@@ -16,13 +16,16 @@ header {
     grid-template-columns: 40% 60%;
     width: 90%;
 }
+fieldset {
+    border-color: navy;
+}
 
 main {
-    margin: 8% 35% 5%;
-    height: 100%;
-    width: 80%;
+    margin: 4% 20% 5%;
+    height: 500px;
+    width: 50%;
     display: grid;
-    grid-template-columns: 30% auto 40%;
+    grid-template-columns: 50% 40%;
 }
 
 nav>a {
@@ -47,9 +50,9 @@ nav {
 
 #profile-pic {
     float: right;
-    width: 300px;
+    width: 350px;
     height: 350px;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 h1 {
@@ -67,6 +70,37 @@ h2 {
     text-align: center;
     padding-bottom: 20px;
 }
+
+p {
+    color: navy;
+    font-weight: bold;
+}
+form {
+    color: navy;
+    font-weight: bold;
+}
+
+#submit {
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 2%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-style: bold;
+    background-color: greenyellow;
+  }
+
+  #reset {
+    background-color: rgb(233, 73, 73);
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 2%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-style: bold;
+  }
 
 footer {
     color: navy;
