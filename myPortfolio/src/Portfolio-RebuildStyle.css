@@ -4,6 +4,7 @@
 
 body {
   background-color: rgb(241, 165, 241);
+  background-size: 100%;
   margin: 0;
 }
 
@@ -36,8 +37,8 @@ nav>a {
 
 nav {
   display: flex;
-  justify-content: flex-end;
-  width: 80%;
+  justify-content: flex-start;
+  width: 70%;
 }
 
 #profile-pic {

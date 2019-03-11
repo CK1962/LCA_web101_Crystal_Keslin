@@ -36,7 +36,7 @@ nav>a {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 80%;
 }
 
@@ -62,5 +62,5 @@ footer {
   font-style: italic;
   text-align: center;
   padding-bottom: 20px;
-  
+
 }
