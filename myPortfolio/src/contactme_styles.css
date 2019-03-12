@@ -43,7 +43,7 @@ nav>a {
 
 nav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 80%;
 }
 
@@ -113,6 +113,7 @@ footer {
 @media (max-width: 800px) {
 
     nav>a {
+      margin-top: 50%;
       color: navy;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 18px;
@@ -147,7 +148,7 @@ footer {
     }
 
     nav>a {
-      margin: 10px 10px;
+
       color: navy;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;

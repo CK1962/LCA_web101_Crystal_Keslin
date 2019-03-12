@@ -37,7 +37,7 @@ nav>a {
 
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 70%;
 }
 
@@ -112,6 +112,7 @@ footer {
   }
 
   nav>a {
+    Margin: 40%;
     color: blue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;

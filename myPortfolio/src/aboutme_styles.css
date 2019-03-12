@@ -36,16 +36,19 @@ nav {
   justify-content: flex-end;
   width: 80%;
 }
+
 main {
   display: grid;
   grid-template-rows: auto;
-   color:rgb(53, 70, 23);
-   font-size-adjust: inherit;
+  color: rgb(53, 70, 23);
+  font-size-adjust: inherit;
 
 }
+
 img {
   padding: 20px;
 }
+
 .att {
   margin-top: 2%;
 }
@@ -57,10 +60,13 @@ footer {
   text-align: center;
   padding-bottom: 20px;
 }
+
 @media (max-width: 800px) {
 
   nav>a {
+    margin-top: 40%;
     font-size: 18px;
+    border: none;
   }
 
   footer {
@@ -77,11 +83,12 @@ footer {
   }
 
   nav>a {
+
     margin: 10px 10px;
     color: darkolivegreen;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    border-radius: 30px;
+    border: none;
     background: transparent;
     padding: 10px;
   }
