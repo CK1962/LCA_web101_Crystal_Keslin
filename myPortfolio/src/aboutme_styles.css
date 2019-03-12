@@ -1,8 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: linear-gradient(rgb(211, 238, 220), rgb(54, 155, 76));
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%vh;
   width: 100%vw;
 }
@@ -15,64 +13,45 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 40% 60%;
-  width: 90%;
-}
-
-main {
-  margin: 8% 35% 5%;
-  height: 100%;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 30% auto 40%;
+  grid-template-columns: 20% 70%;
+  width: 100%;
 }
 
 nav>a {
-  margin: 15% 5% 3%;
+  margin: 10% 5% 3%;
   height: 10%;
   width: 40%vw;
-  color: rgb(8, 36, 8);
+  color: rgb(53, 70, 23);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   border-radius: 40px;
   background: transparent;
   padding: 20px;
   text-align: center;
-  border: 5px solid rgb(8, 36, 8);
+  border: 5px solid rgb(53, 70, 23);
 }
 
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 80%;
 }
+main {
+  display: grid;
+  grid-template-rows: auto;
+   color:rgb(53, 70, 23);
+   font-size-adjust: inherit;
 
-#profile-pic {
-  float: right;
-  width: 300px;
-  height: 350px;
-  border-radius: 50%;
 }
-
-h1 {
-  color: rgb(8, 36, 8);
-  grid-column: 1/3;
-  margin: auto;
-  font-style: italic;
-  text-align: center;
-  padding-bottom: 20px;
+img {
+  padding: 20px;
 }
-
-h2 {
-  color: rgb(8, 36, 8);
-  margin: auto;
-  font-style: italic;
-  text-align: center;
-  padding-bottom: 20px;
+.att {
+  margin-top: 2%;
 }
 
 footer {
-  color: rgb(8, 36, 8);
+  color: drgb(53, 70, 23);
   margin: auto;
   font-style: italic;
   text-align: center;
@@ -81,14 +60,7 @@ footer {
 @media (max-width: 800px) {
 
   nav>a {
-    color: darkolivegreen;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-  }
-
-  #profile-pic {
-    width: 150px;
-    height: auto;
   }
 
   footer {
@@ -113,10 +85,4 @@ footer {
     background: transparent;
     padding: 10px;
   }
-
-  #profile-pic {
-    width: 0px;
-    Height: 0px;
-  }
-
 }
