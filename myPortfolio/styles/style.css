@@ -28,7 +28,7 @@ main {
 }
 
 nav>a {
-  margin: 15% 5% 3%;
+  margin-inline-end: auto;
   height: 10%;
   width: 40%vw;
   color: purple;
