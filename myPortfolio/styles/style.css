@@ -18,11 +18,12 @@ header {
   grid-template-columns: 40% 60%;
   width: 90%;
 }
+
 aside {
   float: left;
   margin-top: 5%;
   animation-delay: 5s;
-  
+
 }
 
 main {
@@ -122,10 +123,12 @@ h3 {
     color: purple;
     border: none;
   }
+
   main {
-  display: flex;
-  flex-wrap: wrap;
-}
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   h1 {
     margin: 10px -100px;
     padding-bottom: 5%;
