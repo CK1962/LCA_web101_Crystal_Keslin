@@ -18,6 +18,12 @@ header {
   grid-template-columns: 40% 60%;
   width: 90%;
 }
+aside {
+  float: left;
+  margin-top: 5%;
+  animation-delay: 5s;
+  
+}
 
 main {
   margin: 8% 35% 5%;
