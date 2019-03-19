@@ -1,0 +1,15 @@
+.container {
+    display: block;
+}
+
+#squares:hover {
+    transform: rotate (360deg);
+
+}
+.odd {
+
+}
+
+.even {
+    
+}
