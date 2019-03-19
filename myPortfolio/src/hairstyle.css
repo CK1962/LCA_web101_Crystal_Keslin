@@ -61,9 +61,20 @@ img {
   height: 250px;
   border-radius: 40%;
   margin: center;
-
-
 }
+
+.social-media {
+
+
+  
+}
+.facebook {
+  width: 10%;
+  height: 10%;
+}
+
+
+
 footer {
   height: 100px;
 text-align: center;
