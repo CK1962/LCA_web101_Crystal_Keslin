@@ -1,15 +1,87 @@
-.container {
-    display: block;
+body {
+    font-size: 16px;
+    line-height: 10px;
+    color: black;
+    background-color: white;
+    transition: 1s;
 }
 
-#squares:hover {
-    transform: rotate (360deg);
-
-}
-.odd {
-
+body:hover {
+    background: wheat;
 }
 
-.even {
-    
+h2 {
+    text-align: center;
+}
+
+.odd_box {
+    display: box;
+    width: 50px;
+    height: 50px;
+    border: 2px black solid;
+    text-align: center;
+    margin: 10px 700px;
+    transition: 2s;
+}
+
+.odd_box:hover {
+    transform: move (right);
+}
+
+.even_box {
+    display: box;
+    width: 50px;
+    height: 50px;
+    border: 2px black solid;
+    text-align: center;
+    margin: 10px 700px;
+    transition: 2s;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#salmon {
+    background-color: salmon;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#lime {
+    background-color: lime;
+}
+
+#green {
+    background-color: green;
+}
+
+#teal {
+    background-color: teal;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#indigo {
+    background-color: indigo;
+}
+
+#purple{
+    background-color: purple;
+}
+
+#violet {
+    background-color: violet;
 }
