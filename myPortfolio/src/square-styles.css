@@ -9,9 +9,7 @@ h2 {
     text-align: center;
 }
 #moving_squares {
-    position: relative;
-    display: box;
-    width: 900px;
+      width: 900px;
     height: 900px;
     margin: 0 auto 10px;
     border: 3px solid black;
@@ -22,34 +20,30 @@ h2 {
     cursor: pointer;
 }
 .odd_box {
-    display: box;
     width: 50px;
     height: 50px;
     border: 2px black solid;
     text-align: center;
     margin: 10px 450px;
-}
-#moving_squares:hover > .odd_box {
     transition: 3s, 3s;
 }
 #moving_squares:hover > .odd_box {
     transform: scale(2,2) translateX(150px) rotate(360deg);
-
+background-color: white
 }
 .even_box {
-    display: box;
     width: 50px;
     height: 50px;
     border: 2px black solid;
     text-align: center;
     margin: 10px 450px;
-}
-#moving_squares:hover > .even_box {
     transition: 3s, 3s;
 }
 
 #moving_squares:hover > .even_box {
-    transform: scale(.5,.5) translateX(-350px) rotate(-360deg);
+    transform: scale(.5,.5) translateX(-750px) rotate(-360deg);
+background-color: black;
+color: white;
 }
 
 #pink {
