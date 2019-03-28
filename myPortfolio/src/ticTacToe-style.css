@@ -1,0 +1,21 @@
+* {
+    margin-left: 0;
+    margin-right: 0;
+}
+#gameboard {
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: calc (50vw - 150px)
+}
+#commands {
+    width: 300px;
+    height: 1500px;
+    max-height: 150px;
+    min-height: 150px;
+    margin-left: calc (50vw - 150px);
+    text-align: center;
+}

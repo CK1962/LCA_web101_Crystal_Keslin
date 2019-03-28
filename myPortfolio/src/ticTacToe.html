@@ -1,134 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./ticTacToe-style.css">
-    <link rel="stylesheet" href="../scripts/ticTacToe.js">
-    <title>Tic Tac toe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./ticTacToe-style.css">
+  <link rel="stylesheet" href="../scripts/ticTacToe.js">
+  <title>Tic Tac toe</title>
 </head>
+
 <body>
-        <div class="main">
-                <div class="container text-center">
-                  <div class="row">
-                    <h1 class="title">Tic Tac Toe</h1>
-                  </div>
-                </div>
-                <div class="gameboard container text-center">
-                  <div class="row-1">
-                    <div class="square column-a cell-a1">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="a1" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="square column-b cell-b1">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="b1" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="square column-c cell-c1">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="c1" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row-2">
-                    <div class="square column-a cell-a2">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="a2" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="square column-b cell-b2">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="b2" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="square row-b column-c cell-c2">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="c2" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row-3">
-                    <div class="square column-a cell-a3">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="a3" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="square column-b cell-b3">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="b3" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="square column-c cell-c3">
-                      <div class="content">
-                        <div class="table">
-                          <div class="table-cell">
-                            <p id="c3" class="game-tile"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="options text-center">
-                    <h2 class="welcome-text">Welcome!<br> Choose your options!</h2>
-                    <div class="row letter-options">
-                      <div class="col-xs-4 col-xs-offset-1 text-right letter-choice">Your Letter:<br><br></div>
-                      <div class="radio-buttons text-left">
-                        <input type="radio" id="x">X
-                        <br/>
-                        <input type="radio" id="o">O
-                      </div>
-                    </div>
-                    <div class="row user-options">
-                      <div class="col-xs-4 col-xs-offset-1 text-right user-choice">First Move:<br><br></div>
-                      <div class="radio-buttons text-left">
-                        <input type="radio" id="you">You
-                        <br>
-                        <input type="radio" id="computer">Computer
-                      </div>
-                    </div>
-                    <div class="row">
-                      <br>
-                      <input type="button" class="btn btn-primary btn-md start-btn" value="Start Playing!">
-                    </div>
-                  </div>
-                </div>
+  <header>
+  </header>
+
+  <section id="gameboard">
+    <div id="square1" class="piece-block"></div>
+    <div id="square2" class="piece-block"></div>
+    <div id="square3" class="piece-block"></div>
+    <div id="square4" class="piece-block"></div>
+    <div id="square5" class="piece-block"></div>
+    <div id="square6" class="piece-block"></div>
+    <div id="square7" class="piece-block"></div>
+    <div id="square8" class="piece-block"></div>
+    <div id="square9" class="piece-block"></div>
+  </section>
+  <section id="commands">
+    <button></button>
+    <button></button>
+  </section>
 
 </body>
+
 </html>
