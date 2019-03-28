@@ -11,23 +11,22 @@
 </head>
 
 <body>
-  <header>
-  </header>
+  <header></header>
 
   <section id="gameboard">
-    <div id="square1" class="piece-block"></div>
-    <div id="square2" class="piece-block"></div>
-    <div id="square3" class="piece-block"></div>
-    <div id="square4" class="piece-block"></div>
-    <div id="square5" class="piece-block"></div>
-    <div id="square6" class="piece-block"></div>
-    <div id="square7" class="piece-block"></div>
-    <div id="square8" class="piece-block"></div>
-    <div id="square9" class="piece-block"></div>
+    <div id="square1" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square2" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square3" class="piece-block" onclick="placeMark('square3')"></div>
+    <div id="square4" class="piece-block" onclick="placeMark('square4')"></div>
+    <div id="square5" class="piece-block" onclick="placeMark('square5')"></div>
+    <div id="square6" class="piece-block" onclick="placeMark('square6')"></div>
+    <div id="square7" class="piece-block" onclick="placeMark('square7')"></div>
+    <div id="square8" class="piece-block" onclick="placeMark('square8')"></div>
+    <div id="square9" class="piece-block" onclick="placeMark('square9')"></div>
   </section>
   <section id="commands">
-    <button></button>
-    <button></button>
+    <button id="btnX" name="X" onclick="changeMarkerToX();">X</button>
+    <button id="btnO" name="O" onclick="changeMarkerToO();">O</button>
   </section>
 
 </body>
