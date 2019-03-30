@@ -1,5 +1,12 @@
 body {
-    background-color: gainsboro;
+    font-family: 'Gloria Hallelujah', cursive;
+    background-image: url("../images2/Green\ Chalkboard.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%vh;
+    width: 100%vw;
+color: whitesmoke;
+text-align: center;
 }
 
     #gameboard {
@@ -9,13 +16,16 @@ body {
         min-height: 300px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: calc (50vw - 150px);
+        margin-left: calc(50vw - 150px);
+        text-align: center;
+
     }
 
     .piece-block {
         width: 100px;
         height: 100px;
-        border: 1px solid black;
+        border: 1px solid whitesmoke;
+
     }
 
     #commands {
@@ -24,6 +34,6 @@ body {
         height: 1500px;
         max-height: 150px;
         min-height: 150px;
-        margin-left: calc (50vw - 150px);
+        margin-left: calc(50vw - 150px);
         text-align: center;
     }

@@ -7,11 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./ticTacToe-style.css">
   <link rel="stylesheet" href="../scripts/ticTacToe.js">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
   <title>Tic Tac toe</title>
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <div class="title">
+      <h1>Tic Tac Toe</h1>
+      <h2><u>Wins</u></h2>
+    </div>
+    <table class="score">
+
+      <h2>X</h2>
+      <h2>Tie</h2>
+      <h2>O</h2>
+    </table>
+
+<h3 class="tally">
+
+</h3>
+
+  </header>
 
   <section id="gameboard">
     <div id="square1" class="piece-block" onclick="placeMark(this.id)"></div>
@@ -24,9 +41,17 @@
     <div id="square8" class="piece-block" onclick="placeMark('square8')"></div>
     <div id="square9" class="piece-block" onclick="placeMark('square9')"></div>
   </section>
+  <div class="players">
+    <h2>
+        Player 1 = "X" and Player 2 = "O"
+      </h2>
+  </div>
   <section id="commands">
     <button id="btnX" name="X" onclick="changeMarkerToX();">X</button>
     <button id="btnO" name="O" onclick="changeMarkerToO();">O</button>
+  </section>
+  <section id="start">
+    <button id="start" name="start" onclick="clearBoard();">Start</button>
   </section>
 
 </body>
