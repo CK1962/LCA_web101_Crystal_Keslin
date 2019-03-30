@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./ticTacToe-style.css">
-  <link rel="stylesheet" href="../scripts/ticTacToe.js">
+  <script src="../scripts/ticTacToe.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
   <title>Tic Tac toe</title>
 </head>
@@ -15,40 +15,28 @@
   <header>
     <div class="title">
       <h1>Tic Tac Toe</h1>
-      <h2><u>Wins</u></h2>
     </div>
-    <table class="score">
-
-      <h2>X</h2>
-      <h2>Tie</h2>
-      <h2>O</h2>
-    </table>
-
-<h3 class="tally">
-
-</h3>
-
   </header>
 
   <section id="gameboard">
     <div id="square1" class="piece-block" onclick="placeMark(this.id)"></div>
     <div id="square2" class="piece-block" onclick="placeMark(this.id)"></div>
-    <div id="square3" class="piece-block" onclick="placeMark('square3')"></div>
-    <div id="square4" class="piece-block" onclick="placeMark('square4')"></div>
-    <div id="square5" class="piece-block" onclick="placeMark('square5')"></div>
-    <div id="square6" class="piece-block" onclick="placeMark('square6')"></div>
-    <div id="square7" class="piece-block" onclick="placeMark('square7')"></div>
-    <div id="square8" class="piece-block" onclick="placeMark('square8')"></div>
-    <div id="square9" class="piece-block" onclick="placeMark('square9')"></div>
+    <div id="square3" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square4" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square5" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square6" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square7" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square8" class="piece-block" onclick="placeMark(this.id)"></div>
+    <div id="square9" class="piece-block" onclick="placeMark(this.id)"></div>
   </section>
   <div class="players">
     <h2>
-        Player 1 = "X" and Player 2 = "O"
-      </h2>
+      Player 1 = "X" and Player 2 = "O"
+    </h2>
   </div>
   <section id="commands">
-    <button id="btnX" name="X" onclick="changeMarkerToX();">X</button>
-    <button id="btnO" name="O" onclick="changeMarkerToO();">O</button>
+    <!-- <button id="btnX" name="X" onclick="changeMarkerToX();">X</button>
+    <button id="btnO" name="O" onclick="changeMarkerToO();">O</button> -->
     <button id="start" name="start" onclick="clearBoard();">Start</button>
   </section>
 

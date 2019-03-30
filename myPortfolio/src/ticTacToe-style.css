@@ -5,35 +5,35 @@ body {
     background-size: cover;
     height: 100%vh;
     width: 100%vw;
-color: whitesmoke;
-text-align: center;
+    color: whitesmoke;
+    text-align: center;
 }
 
-    #gameboard {
-        width: 300px;
-        height: 300px;
-        max-height: 300px;
-        min-height: 300px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: calc(50vw - 150px);
-        text-align: center;
+#gameboard {
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: calc(50vw - 150px);
+    text-align: center;
+    font-size: 36px;
+}
 
-    }
+.piece-block {
+    width: 100px;
+    height: 100px;
+    border: 1px solid whitesmoke;
 
-    .piece-block {
-        width: 100px;
-        height: 100px;
-        border: 1px solid whitesmoke;
+}
 
-    }
-
-    #commands {
-        margin-top: 50px;
-        width: 300px;
-        height: 1500px;
-        max-height: 150px;
-        min-height: 150px;
-        margin-left: calc(50vw - 150px);
-        text-align: center;
-    }
+#commands {
+    margin-top: 50px;
+    width: 300px;
+    height: 1500px;
+    max-height: 150px;
+    min-height: 150px;
+    margin-left: calc(50vw - 150px);
+    text-align: center;
+}
