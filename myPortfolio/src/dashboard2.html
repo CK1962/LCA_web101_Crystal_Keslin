@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dashboard2Styles.css">
+    <title>Dashboard 2</title>
+</head>
+
+<body>
+    <header class="container1">
+        <div id="logo">
+            <p> <img src="../images2/LCA_Logo.png" id="logo" alt="fake logo"
+                    style="float:left; padding:12px; width:150px; height:150px; vertical-align:text-top;">
+            </p>
+        </div>
+
+        <div id="header-text">
+            <h1>Live - every day as if it is your last</h1>
+            <h1>Love - your family and show them every day</h1>
+            <h1>Laugh - often</h1>
+        </div>
+        <div id="clock">
+            <iframe
+                src="http://free.timeanddate.com/clock/i6p6ab0s/n544/szw160/szh160/hoc000/hbw2/hfceee/cf100/hncccc/fdi76/mqc000/mql10/mqw4/mqd98/mhc000/mhl10/mhw4/mhd98/mmc000/mml10/mmw1/mmd98"
+                frameborder="0" width="160" height="160"></iframe>
+        </div>
+    </header>
+    <div class="media">
+        <banner id="banner">
+                <button id="location" onclick="getLocation()">Get Location!</button>
+                <p id="my-coordinates"></p>
+
+                <div id="list_section">
+                        <h1 id="header"><u>To-do list</u></h1>
+                        <ul>
+                          <li class="item">Buy movie tickets</li>
+                        </ul>
+                        <div id="newItemButton"><button href="#">new item</button></div>
+                        <form id="newItemForm">
+                          <input type="text" id="itemField" placeholder="Item" />
+                          <input type="submit" id="add" value="add" />
+                        </form>
+                      </div>
+
+            <nav>
+                <h1><u>News Links</u>
+                </h1>
+                <button><a class="link" href="https://news.google.com/?hl=en-US&gl=US&ceid=US:en" target="blank">/Google
+                        News</a></button>
+                <button><a class="link" href="https://www.washingtonpost.com/?noredirect=on" target="blank">/Washington
+                        Post</a></button>
+                <button><a class="link" href="https://www.lubbockonline.com/news" target="blank">/Lubbock
+                        Online</a></button>
+            </nav>
+        </banner>
+    </div>
+
+    </banner>
+    <main>
+        <div id="calendar">
+            <div class="calendar-controls">
+                <select name="" id="years"></select>
+                <option value="2019" selected>2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+
+                <select name="" id="months"></select>
+                <option value="0">Jan</option>
+                <option value="1">Feb</option>
+                <option value="2">Mar</option>
+                <option value="3" selected>Apr</option>
+                <option value="4">May</option>
+                <option value="5">Jun</option>
+                <option value="6">Jul</option>
+                <option value="7">Aug</option>
+                <option value="8">Sep</option>
+                <option value="9">Oct</option>
+                <option value="10">Nov</option>
+                <option value="11">Dec</option>
+
+            </div>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <div class="day-name">Sun</div>
+                    <div class="day-name">Mon</div>
+                    <div class="day-name">Tue</div>
+                    <div class="day-name">Wed</div>
+                    <div class="day-name">Thu</div>
+                    <div class="day-name">Fri</div>
+                    <div class="day-name">Sat</div>
+                </div>
+                <div class="calendar-body">
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                </div>
+
+            </div>
+        </div>
+        <div id="calculator">
+            <fieldset id="calculator-container">
+                <form name="calculator">
+
+                    <input id="display" type="text" name="display" readonly>
+                    <br>
+                    <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+                    <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+                    <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+                    <input class="button mathButtons" type="button" value="+"
+                        onclick="calculator.display.value += ' + '">
+                    <br>
+                    <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+                    <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+                    <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+                    <input class="button mathButtons" type="button" value="-"
+                        onclick="calculator.display.value += ' - '">
+                    <br>
+                    <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+                    <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+                    <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+                    <input class="button mathButtons" type="button" value="x"
+                        onclick="calculator.display.value += ' * '">
+                    <br>
+                    <input id="clearButton" class="button" type="button" value="C"
+                        onclick="calculator.display.value = ''">
+                    <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+                    <input class="button mathButtons" type="button" value="="
+                        onclick="calculator.display.value = eval(calculator.display.value)">
+                    <input class="button mathButtons" type="button" value="/"
+                        onclick="calculator.display.value += ' / '">
+                </form>
+            </fieldset>
+        </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <h2>
+            Dashboard created by Crystal Keslin 2-22-19 -- Updated 4-1-19
+        </h2>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="../scripts/dashboard2.js"></script>
+</body>
+
+</html>
