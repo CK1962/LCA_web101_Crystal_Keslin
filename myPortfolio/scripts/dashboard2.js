@@ -31,8 +31,8 @@ $(function() {
 
 });
 
-
-
+$("#wrapper").click('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+});
 
 let _ = selector => {
     return document.querySelector(selector);
