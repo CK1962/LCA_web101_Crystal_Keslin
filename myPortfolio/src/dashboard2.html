@@ -30,8 +30,20 @@
     </header>
     <div class="media">
         <banner id="banner">
-            <button id="location" onclick="getLocation()">Get Location!</button>
-            <p id="my-coordinates"></p>
+            <div>
+                <button id="location" onclick="getLocation()">Get Location!</button>
+                <p id="my-coordinates"></p>
+            </div>
+            <nav>
+                <h1><u>News Links</u>
+                </h1>
+                <button><a class="link" href="https://news.google.com/?hl=en-US&gl=US&ceid=US:en" target="blank">/Google
+                        News</a></button>
+                <button><a class="link" href="https://www.washingtonpost.com/?noredirect=on" target="blank">/Washington
+                        Post</a></button>
+                <button><a class="link" href="https://www.lubbockonline.com/news" target="blank">/Lubbock
+                        Online</a></button>
+            </nav>
 
             <div id="list_section">
                 <h1 id="header"><u>To-do list</u></h1>
@@ -45,21 +57,56 @@
                 </form>
             </div>
 
-            <nav>
-                <h1><u>News Links</u>
-                </h1>
-                <button><a class="link" href="https://news.google.com/?hl=en-US&gl=US&ceid=US:en" target="blank">/Google
-                        News</a></button>
-                <button><a class="link" href="https://www.washingtonpost.com/?noredirect=on" target="blank">/Washington
-                        Post</a></button>
-                <button><a class="link" href="https://www.lubbockonline.com/news" target="blank">/Lubbock
-                        Online</a></button>
-            </nav>
         </banner>
     </div>
 
-    </banner>
     <main>
+
+        <div class="wrapper">
+            <div class="box-container">
+                <div class="box c"></div>
+                <div class="box y"></div>
+                <div class="box m"></div>
+                <div class="box k"></div>
+            </div>
+        </div>
+
+        <div id="calculator">
+            <fieldset id="calculator-container">
+                <form name="calculator">
+
+                    <input id="display" type="text" name="display" readonly>
+                    <div class="digit container">
+                        <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+                        <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+                        <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+                        <input class="button mathButtons" type="button" value="+"
+                            onclick="calculator.display.value += ' + '">
+
+                        <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+                        <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+                        <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+                        <input class="button mathButtons" type="button" value="-"
+                            onclick="calculator.display.value += ' - '">
+
+                        <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+                        <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+                        <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+                        <input class="button mathButtons" type="button" value="x"
+                            onclick="calculator.display.value += ' * '">
+
+                        <input id="clearButton" class="button" type="button" value="C"
+                            onclick="calculator.display.value = ''">
+                        <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+                        <input class="button mathButtons" type="button" value="="
+                            onclick="calculator.display.value = eval(calculator.display.value)">
+                        <input class="button mathButtons" type="button" value="/"
+                            onclick="calculator.display.value += ' / '">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+
         <div id="calendar">
             <div class="calendar-controls">
                 <select name="" id="years"></select>
@@ -120,51 +167,15 @@
 
             </div>
         </div>
-        <div id="calculator">
-            <fieldset id="calculator-container">
-                <form name="calculator">
 
-                    <input id="display" type="text" name="display" readonly>
-                    <div class="digit container">
-                        <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
-                        <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
-                        <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
-                        <input class="button mathButtons" type="button" value="+"
-                            onclick="calculator.display.value += ' + '">
 
-                        <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
-                        <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
-                        <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
-                        <input class="button mathButtons" type="button" value="-"
-                            onclick="calculator.display.value += ' - '">
 
-                        <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
-                        <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
-                        <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
-                        <input class="button mathButtons" type="button" value="x"
-                            onclick="calculator.display.value += ' * '">
-                        
-                        <input id="clearButton" class="button" type="button" value="C"
-                            onclick="calculator.display.value = ''">
-                        <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
-                        <input class="button mathButtons" type="button" value="="
-                            onclick="calculator.display.value = eval(calculator.display.value)">
-                        <input class="button mathButtons" type="button" value="/"
-                            onclick="calculator.display.value += ' / '">
-                    </div>
-                </form>
-            </fieldset>
-        </div>
-        </div>
     </main>
 
-
-
-
     <footer>
-        <h2>
+        <h3>
             Dashboard created by Crystal Keslin 2-22-19 -- Updated 4-1-19
-        </h2>
+        </h3>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
     <script src="../scripts/dashboard2.js"></script>
