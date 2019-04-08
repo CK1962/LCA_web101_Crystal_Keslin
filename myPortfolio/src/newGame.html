@@ -13,9 +13,8 @@
     <div class="wrapper">
 
         <img src="http://adrianpayne.me/game/assets/images/avatar.png" class="avatar" />
-        <div class="speech-bubble">
+        <div class="speech-bubble"></div>
 
-        </div>
         <div class="gameBoard">
 
             <div class="gameover">
@@ -54,24 +53,22 @@
             <div class="gametile"></div>
             <div class="gametile"></div>
         </div>
-    </div>
-    <div class="sidebar">
-        <div class="scoreBoard">
-            <h2 class="fancy-text">Score</h2>
-            <span class="score fancy-text"></span>
-            <div class="loot">
-                <ul class="lootracker">
-                    <li><span class="gemcount">0</span> x <img src="http://adrianpayne.me/game/assets/images/gem.png" />
-                    </li>
-                    <li><span class="starcount">0</span> x <img
-                            src="http://adrianpayne.me/game/assets/images/star.png" /></li>
-                </ul>
-                <a href="javascript:void(0)" class="button fancy-text reset">Reset board</a>
+        <div class="sidebar">
+            <div class="scoreBoard">
+                <h2 class="score">Score</h2>
+                <span class="fancy-text"></span>
+                <div class="loot">
+                    <ul class="lootracker">
+                        <li><span class="gemcount">0</span> x <img
+                                src="http://adrianpayne.me/game/assets/images/gem.png" /></li>
+                        <li><span class="starcount">0</span> x <img
+                                src="http://adrianpayne.me/game/assets/images/star.png" /></li>
+                    </ul>
+                </div>
             </div>
+            <a href="javascript:void(0)" class="button fancy-text reset">Reset board</a>
         </div>
-
     </div>
-
 
     <!-- Preload Game Sounds -->
     <audio preload="auto" id="pop-1">
@@ -87,6 +84,8 @@
         <source src="http://adrianpayne.me/game/assets/sounds/gem.mp3">
         </source>
     </audio>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
     <script src="newGame.js"></script>
 </body>

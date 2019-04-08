@@ -1,31 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);
 
-body{
-  height:100%;
-  overflow:hidden;
-  background: radial-gradient(ellipse at center, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 25%,rgba(161,219,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 );
-  font-family: "Luckiest Guy", sans-serif;
-  letter-spacing:1px
-}
 
 div{
   box-sizing:border-box;
 }
 
 .wrapper{
-  width:450px;
-  margin:15px auto;
+  width:520px;
+  height:100%;
+  overflow:hidden;
+  background: radial-gradient(ellipse at center, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 25%,rgba(161,219,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 );
+  font-family: "Luckiest Guy", sans-serif;
+  letter-spacing:1px;
+  margin: 20px auto;
   position:relative;
 }
 
 .gameover{
   box-sizing:border-box;
-  padding:70px 0 0 0;
+  padding:40px 0 0 0;
   width:275px;
-  height:327px;
+  height:250px;
   position:absolute;
-  top:0;
+  top: 0;
   left:-6px;
   background: rgba(0,0,0,0.5);
   z-index:100;
@@ -37,7 +35,7 @@ div{
 }
 
 .gameBoard{
-  width:275px;
+  width:300px;
   position:relative;
   float:left;
 }
@@ -45,9 +43,15 @@ div{
   clear:both;
 }
 
+.sidebar{
+  width:140px;
+  height:285px;
+  position:relative;
+  float:right;
+}
 .scoreBoard{
-  width:110px;
-  height:170px;
+  width:120px;
+  height:160px;
   margin-top:-34px;
   padding:10px 10px 0;
   text-align:right;
@@ -58,11 +62,17 @@ div{
   background: rgba(0,0,0,0.8);
 }
 
+.score {
+  height: 25px;
+	position:relative;
+	top:8px;
+}
+
 .lootracker li{
-	height:30px;
+	height: 30px;
 }
 .lootracker li img{
-	height:20px;
+	height: 25px;
 	position:relative;
 	top:8px;
 }
@@ -90,10 +100,6 @@ div{
   background: url('http://adrianpayne.me/game/assets/images/dirt.png') no-repeat;
 }
 
-.stone{
-  background: url('http://adrianpayne.me/game/assets/images/stone.png') no-repeat;
-}
-
 .water{
   background: url('http://adrianpayne.me/game/assets/images/water.png') no-repeat;
 }
@@ -119,8 +125,8 @@ div{
 }
 
 .chest{
-  width:45px;
-  height:50px;
+  width:50px;
+  height:60px;
   position:relative;
   left:8px;
   top:-14px;
@@ -135,7 +141,7 @@ div{
 /* Buttons */
 .button{
   width:80px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 5px 5px 5px;
   display:block;
   position:absolute;
   left:17px;
@@ -172,13 +178,14 @@ h3{
 }
 
 .final-score{
-  font-size:55px;
+  font-size:50px;
   color:gold;
 }
 
 
 .score{
-  font-size:20px;
+  position:absolute;
+  font-size:26px;
   color:gold;
   right:10px;
 }
