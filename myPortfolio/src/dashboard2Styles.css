@@ -65,110 +65,21 @@ div {
   margin: 0;
 }
 
-#wrapper {
-  box-sizing: content-box;
-  height: 300px;
+#myContainer {
   width: 300px;
-  margin: 10px;
+  height: 300px;
+  position: relative;
+  background: lightgray;
   border: 2px solid gray;
+  border-radius: 10%;
+  text-align: center;
 }
-
-.box-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: 150px;
-  height: 150px;
-  border: 5px solid lightgray;
-}
-
-.c {
-  background-color: rgb(80, 80, 168);
-  animation-name: flip;
-  animation-duration: 5s;
-  animation-timing-function: ease;
- 
-}
-
-.y {
+#myAnimation {
+  width: 25px;
+  height: 25px;
+  position: absolute;
   background-color: gray;
-  animation-name: rotate-y;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-}
 
-.m {
-  background-color: violet;
-  animation-name: rotate-m;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-}
-
-.k {
-  background-color: rgb(129, 129, 56);
-  animation-name: rotate-k;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-}
-
-/* keyframes */
-
-@keyframes translate-c {
-  from {
-    transform: translate(0px, 0px);
-  }
-
-  to {
-    transform: translate(150px, 0px);
-  }
-}
-
-@keyframes flip {
-  25% {
-    transform-origin: right;
-    animation-mode: forwards;
-    transform: rotateY(-180deg);
-    ;
-  }
-
-  25.001% {
-    transform-origin: bottom;
-    transform: translateX(150px);
-    background-color: #800000;
-  }
-
-  50% {
-    transform-origin: bottom;
-    transform: translateX(150px) rotateX(-180deg);
-
-  }
-
-  50.001% {
-    transform-origin: left;
-    transform: translateX(150px) translateY(150px);
-    background-color: rgb(243, 243, 92);
-  }
-
-  75% {
-    transform-origin: left;
-    transform-origin: left;
-    transform: translateX(150px) translateY(150px) rotateY(180deg);
-  }
-
-  75.001% {
-    transform-origin: top;
-    transform: translateY(150px);
-    background-color: orange;
-  }
-
-  100% {
-    transform-origin: top;
-    transform-origin: top;
-    transform: translateY(150px) rotateX(180deg);
-  }
 }
 
 #calendar {

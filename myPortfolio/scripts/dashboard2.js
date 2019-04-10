@@ -34,18 +34,20 @@ $(function () {
 });
 
 // My click destresser
-function animationClick(element, animation) {
-  element = $(element);
-  element.click(
-    function () {
-      element.addClass('animated ' + animation);
-      //wait for animation to finish before removing classes
-      window.setTimeout(function () {
-        element.removeClass('animated ' + animation);
-      }, 2000);
+function myMove() {
+  var elem = document.getElementById("myAnimation");
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 200) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.left = pos + 'px';
     }
-  );
-};
+  }
+}
 
 // calendar header
 let _ = selector => {
