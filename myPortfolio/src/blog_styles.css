@@ -52,6 +52,11 @@ div {
   font-weight: bold;
   text-align: center;
 }
+div>a>img {
+  height: 250px;
+  width: 250px;
+  image-orientation: initial;
+}
 
 footer {
   color: wheat;
