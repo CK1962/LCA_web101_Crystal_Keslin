@@ -34,8 +34,8 @@ $(function () {
 });
 
 // My click destresser
-function myMove() {
-  var elem = document.getElementById("myAnimation");
+function myMove1() {
+  var elem = document.getElementById("myAnimation1");
   var pos = 0;
   var id = setInterval(frame, 10);
   function frame() {
@@ -45,6 +45,20 @@ function myMove() {
       pos++;
       elem.style.top = pos + 'px';
       elem.style.left = pos + 'px';
+    }
+  }
+}
+function myMove2() {
+  var elem = document.getElementById("myAnimation2");
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 200) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.right = pos + 'px';
     }
   }
 }
