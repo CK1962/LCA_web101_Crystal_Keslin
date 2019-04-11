@@ -1,0 +1,116 @@
+body {
+    font: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border: 1px solid #000;
+    margin: 15px 20px;
+    background-color: rgb(238, 238, 203);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 33% auto;
+    width: 100vw;
+    height: 200px;
+    background-color: rgb(58, 122, 87);
+}
+
+.container1 {
+width: 90%;
+height: 150px;
+background-color: black;
+font-size: larger;
+font-stretch: wider;
+color: whitesmoke;
+text-align: center;
+padding-top: 20px;
+margin-top: 8%;
+margin-left: 5%;
+}
+nav>a {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    font-stretch: wider;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 15px;
+    padding-top: 10px;
+    border-radius: 8%;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container2 {
+    width: 70vw;
+    height: 350px;
+margin: 8% 12% 5% 12%;
+ background-color: whitesmoke;
+border: 5px solid rgb(58, 122, 87);
+border-radius: 2%;
+}
+
+.family {
+    font-size: 40px;
+    font-stretch: wider;
+    color: black;
+    text-align: center;
+    }
+
+.family>img {
+    margin-top: -1%;
+    border-radius: 8%;
+}
+
+.container3 {
+    width: 70vw;
+    margin: 7% 10% 5% 10%;
+}
+
+article {
+    display: inline-block;
+    height: 382px;
+    width: 300px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #block1>a>img {
+      width: 210px;
+      height: 200px;
+      border: 3px solid rgb(58, 122, 87);
+      box-shadow: 2px 2px black;
+  }
+
+  #block2>a>img {
+    width: 210px;
+      height: 200px;
+      border: 3px solid rgb(58, 122, 87);
+      box-shadow: 2px 2px black;
+}
+
+#block3>a>img {
+    width: 210px;
+      height: 200px;
+      border: 3px solid rgb(58, 122, 87);
+      box-shadow: 2px 2px black;
+}
+
+#block4>a>img {
+    width: 210px;
+    height: 200px;
+    border: 3px solid rgb(58, 122, 87);
+    box-shadow: 2px 2px black;
+}
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+}
