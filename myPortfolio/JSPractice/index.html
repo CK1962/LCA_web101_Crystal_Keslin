@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        // This is a comment. Follow the other lines that look like me to complete the assignment. Start your LiveServer to see your changes as you save them.
+        // "document" is the interface we have on the screen, also known as the DOM.
+        // .write is a built-in method(or function) on the DOM we can use to print things out on the document/screen.
+
+        document.write("this is the first line in the script the browser came across, line 11.")
+        document.write("<hr/>") // Don't worry about this line.
+
+        /*  Add
+            _1. Declare, name and assign two variables as Number type values on line 19 and 20
+            _2. Pass the names into the .write method on line 21 like so: document.write(myNum + myNumTwo)on line 22. Be sure to add in the " + " in-between the two variables.
+            _3. Save and checkout your browser.
+        */
+
+        var myNum = 3;
+        var myNumTwo = 8;
+
+        document.write(myNum + myNumTwo)
+        document.write("<hr/>") // Don't worry about this line. It creates the line across the screen.
+
+        /*  Subtract
+            _1. Now pass those same variables into the ".write()" method on line 30 but with a " - " in-between them.
+            _2. Save and checkout your browser.
+        */
+
+        document.write(myNum - myNumTwo)
+        document.write("<hr/>")
+
+        /*  Pass a Multiply Function to the .write() method
+            _1. Create another Number type variable with a different value on line 42
+            _2. Do you see the function multiplyTwoNumbers below? It takes in two factors a & b and returns their product.
+            _3. Do you see the document.write below it? Un-comment it by removing the // before it.
+            _4. In that same line, pass your new variable's name and one of your first variable's names in the middle of the ().
+            _5. Save and checkout your browser.
+        */
+        var myNumThree = 10;
+
+        const multiplyTwoNumbers = (a, b) => {
+            return a * b
+        }
+
+        document.write(multiplyTwoNumbers(myNumThree, myNumTwo))
+        document.write("<hr/>")
+
+        /*  Build a Divide function
+          _1. Below you will see another document.write()
+          _2. Use the multiplyTwo Numbers functions as a template to build a divideTwoNumbers functions
+          _3. Make the function divide the a by b and returns the quotient
+          _4. Create two new variables and give them Number values
+          _5. Invoke the function by passing the two variables into the () and passing the dividing function into the .write method below
+          _6. Save and checkout your browser.
+        */
+        var myNumFive = 20;
+        var myNumSix = 4;
+        const divideTwoNumbers = (a, b) => {
+            return a / b
+        }
+        document.write(divideTwoNumbers(myNumFive, myNumSix))
+        document.write("<hr/>")
+
+        /*Compare
+          _1. Use the Comparison Operators: <, >, ==, === !=, !==
+          _2. Create a few more variables of either Number or String type
+          _3 Make a few comparisons inside the () of document.write to replace the "jjj"
+          _4. Save and checkout your browser. Play some more!!
+        */
+
+var myNumSeven = 6;
+var myNumEight = 15;
+
+
+
+
+        document.write(myNumSeven > myNumEight)
+        document.write("<hr/>")
+
+        /*Concat Strings "Hello " + "Snoopy" => "Hello Snoopy"
+          _1. Create a few new String type variables below
+          _2. Type the variables in to the () of the document.write method below separating each name with a " + ".
+        */
+
+        var firstName = "Matt"
+        var lastName = "Keslin"
+
+        var stockPrice = 5.15
+
+
+        document.write("$" + stockPrice + "-------"+ lastName + ", " + firstName)
+
+        document.write()
+        document.write("<hr/>")
+
+        // examples of variables.
+        var myVarOne = "I";
+        var myVarTwo = "Gangs of New York";
+        var myVarThree = "love";
+
+        document.write("<hr/>")
+        document.write(myVarOne + " " + myVarThree + " " + myVarTwo)
+    </script>
+    <p>When you're finished see if you can bring in some of these other
+        <a href="https://www.w3schools.com/jsref/met_doc_write.asp">built in methods</a>
+    </p>
+    <ol>
+        <li>Then try building a button element with an onclick handler that increments a variable each time it's
+            clicked.</li>
+        <li>Create a paragraph element with an id: iterator</li>
+        <li>Build another function that uses createTextNode, getElementById and appendChild to write the variable on the
+            document for you to see.</li>
+        <li>Then build another button that decrements the variable each time it's clicked.</li>
+    </ol>
+</body>
+
+</html>
