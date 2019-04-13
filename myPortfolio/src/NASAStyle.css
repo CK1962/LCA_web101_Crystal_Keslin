@@ -34,5 +34,11 @@ article {
 
 button {
   background-color: lightgray;
-  
+
+}
+
+footer {
+  width: 100vw;
+  text-align: left;
+  ;
 }
