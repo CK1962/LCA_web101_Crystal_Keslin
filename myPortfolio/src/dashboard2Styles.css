@@ -19,8 +19,12 @@ header {
 
 }
 
-#clock {
-  margin: 1% 1% 1%;
+.clock {
+  margin-top: 5%;
+  font-size: 36px;
+ text-align: center;
+ width: auto;
+ height: auto;
 }
 
 #banner {
