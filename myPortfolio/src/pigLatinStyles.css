@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 100vh;
+    padding: 5%;
+    background-image: radial-gradient(rgb(230, 214, 214), rgb(199, 90, 108));
+    border: 5px solid pink;
+}
