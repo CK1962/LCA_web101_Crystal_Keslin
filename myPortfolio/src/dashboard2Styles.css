@@ -20,12 +20,16 @@ header {
 }
 
 .clock {
-  margin-top: 5%;
-  font-size: 36px;
- text-align: center;
- width: auto;
- height: auto;
-}
+  height: 75px;
+  margin-top: 4%;
+    background-color:lightgray;
+    color:black;
+    font-size:40px;
+    text-align: center;
+    padding:10px;
+    border: 3px solid gray;
+    border-radius: 8%;
+        }
 
 #banner {
   display: flex;
@@ -106,7 +110,7 @@ div {
   display: block;
   height: 300px;
   width: 300px;
-  margin: 15px -70px;
+  margin: 10px -70px;
   border: 2px solid gray;
 }
 
@@ -161,6 +165,10 @@ div {
   background-color: #eaeaea;
   display: flex;
   padding: 10px;
+}
+select {
+  flex-grow: 1;
+  padding:5px;
 }
 
 #calculator-container {
